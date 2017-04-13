@@ -1,0 +1,33 @@
+@media screen and (max-width: 1019px) {
+  .header-container {
+    width: 100%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  nav {
+    flex: 1;
+  }
+
+  main {
+    flex: 4;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    width: 40%;
+
+    [class*="button"]:not(:first-child) {
+      display: none;
+    }
+  }
+}

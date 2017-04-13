@@ -1,0 +1,175 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  background: rgba(0, 0, 0, 0.04);
+  margin: 0 8px; }
+
+.flex-c {
+  display: flex;
+  flex-direction: column; }
+
+.flex-r {
+  display: flex;
+  flex-direction: row; }
+
+/* ========== Page Settings =========== */
+.page {
+  background: #d8d8d8;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+/* ============= Header ============== */
+.header-container {
+  width: 70%;
+  height: 90px; }
+  .header-container .button {
+    height: inherit;
+    background: #d8d8d8;
+    border-left: 1px solid #fff;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1; }
+    .header-container .button:first-child {
+      background: #fff;
+      flex: 2; }
+      .header-container .button:first-child div {
+        background: #d8d8d8;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    .header-container .button:last-child {
+      padding-bottom: 10px;
+      flex: 4;
+      justify-content: flex-end;
+      border-right: none; }
+
+.social {
+  background: #ccc;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; }
+
+/* ============= Main ============== */
+.main {
+  width: 100%;
+  height: auto;
+  justify-content: space-between; }
+
+main, nav {
+  height: auto;
+  padding-top: 40px; }
+
+/* ========== Navbar ============== */
+nav {
+  background: #fff;
+  flex-basis: 15%; }
+  nav .nav {
+    background: #d8d8d8;
+    height: 200px;
+    margin: 0 15px 20px 20px; }
+    nav .nav > div {
+      background: #8a8a8a;
+      height: 30px; }
+
+/* ========== Story ============== */
+main {
+  flex-basis: 55%;
+  background: #fff;
+  border-top-right-radius: 20px; }
+
+article {
+  border-bottom: 3px solid #8a8a8a;
+  margin: 0 40px 80px; }
+
+.title {
+  height: 160px;
+  background: #4f4f4f; }
+
+.author, .date {
+  height: 40px;
+  margin-top: 10px; }
+
+.author {
+  width: 60%;
+  background: #d8d8d8; }
+
+.date {
+  width: 100%;
+  background: #d8d8d8;
+  justify-content: space-around; }
+  .date div {
+    flex: 1;
+    margin: 10px;
+    height: 20px;
+    background: #bbb; }
+
+.story {
+  margin-top: 50px; }
+
+.text {
+  height: 160px;
+  background: #8a8a8a; }
+
+.read-more, .img {
+  margin: 20px 0; }
+
+.img {
+  width: 80%;
+  height: 370px;
+  background: #4f4f4f; }
+
+.read-more {
+  width: 100px;
+  height: 40px;
+  background: #d8d8d8; }
+
+/* =========== Aside ============== */
+aside {
+  flex-basis: 30%; }
+
+.search {
+  height: 80px;
+  background: #d8d8d8; }
+  .search > div {
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    background: #ccc; }
+
+.add {
+  height: 250px;
+  background: #d8d8d8; }
+  .add:nth-child(even) {
+    background: #bbb; }
+
+@media screen and (max-width: 1019px) {
+  .header-container {
+    width: 100%; }
+
+  aside {
+    display: none; }
+
+  nav {
+    flex: 1; }
+
+  main {
+    flex: 4; } }
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .header-container {
+    width: 40%; }
+    .header-container [class*="button"]:not(:first-child) {
+      display: none; } }
+
+/*# sourceMappingURL=main.css.map */

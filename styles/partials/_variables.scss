@@ -1,0 +1,24 @@
+$light: #d8d8d8;
+$medium: #8a8a8a;
+$heavy: #4f4f4f;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(black, .04);
+  margin: 0 8px;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}

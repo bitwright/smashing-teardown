@@ -1,0 +1,179 @@
+/* ========== Page Settings =========== */
+
+.page {
+  background: $light;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ============= Header ============== */
+
+.header-container {
+  width: 70%;
+  height: 90px;
+
+  .button {
+    height: inherit;
+    background: $light;
+    border-left: 1px solid #fff;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex: 1;
+
+    &:first-child {
+      background: #fff;
+      flex: 2;
+      
+      div {
+        background: $light;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+      flex: 4;
+      justify-content: flex-end;
+      border-right: none;
+    }
+  }
+}
+
+.social {
+  background: #ccc;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* ============= Main ============== */
+
+.main {
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+
+main, nav {
+  height: auto;
+  padding-top: 40px;
+}
+
+/* ========== Navbar ============== */
+
+nav {
+  background: #fff;
+  flex-basis: 15%;
+
+  .nav {
+    background: $light;
+    height: 200px;
+    margin: 0 15px 20px 20px;
+
+    > div {
+      background: $medium;
+      height: 30px;
+    }
+  }
+}
+
+/* ========== Story ============== */
+
+main {
+  flex-basis: 55%;
+  background: #fff;
+  border-top-right-radius: 20px;
+}
+
+article {
+  border-bottom: 3px solid $medium;
+  margin: 0 40px 80px;
+}
+
+.title {
+  height: 160px;
+  background: $heavy;
+}
+
+.author, .date {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.author {
+  width: 60%;
+  background: $light;
+}
+
+.date {
+  width: 100%;
+  background: $light;
+  justify-content: space-around;
+
+  div {
+    flex: 1;
+    margin: 10px;
+    height: 20px;
+    background: #bbb;
+  }
+}
+
+.story {
+  margin-top: 50px;
+}
+
+.text {
+  height: 160px;
+  background: $medium;
+}
+
+.read-more, .img {
+  margin: 20px 0;
+}
+
+.img {
+  width: 80%;
+  height: 370px;
+  background: $heavy;
+}
+
+.read-more {
+  width: 100px;
+  height: 40px;
+  background: $light;
+}
+
+/* =========== Aside ============== */
+
+aside {
+  flex-basis: 30%;
+}
+
+.search {
+  height: 80px;
+  background: $light;
+
+  > div {
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    background: #ccc;
+  }
+}
+
+.add {
+  height: 250px;
+  background: $light;
+
+  &:nth-child(even) {
+    background: #bbb;
+  }
+}
